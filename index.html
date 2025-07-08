@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="eg">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="purple">P</span>ortfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark menucross" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars menucross" onclick="openmenu()"></i>
+            </nav>
+            <img class="devimg" src="dev.png" alt="deveoperImage">
+
+            <div class="header-text">
+                <p>Frontend developer</p>
+                <h1>Hi, I'm <span class="purple">Govind Prajapat</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------- about section ------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" alt="profileImage">
+                    <h4 class="about-name">Govind Prajapat</h4>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <div class="paragraph">
+                        <p>Hi, i'm Govind Prajapat, a 3rd-year B.tech computer science and engineering student with a
+                            strong command of core engineering subjects. I specialize in Frontend development with
+                            hands-on
+                            experience in HTML5, CSS3 and javascript,crafting clean, responsive web pages.
+                        </p>
+                    </div>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contants active-tab " id="skills">
+                        <ul>
+                            <li><span>Frontend development</span><br>developing interactive and responsive websites
+                            </li>
+                            <li><span>UI/UX</span><br>designing web/app interfaces </li>
+                            <li><span>Problem solving</span><br> solving the users problem</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="Experience">
+                        <ul>
+                            <li><span> jan 2025-present</span><br>Frontend development by apna collage</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="Education">
+                        <ul>
+                            <li><span>2020 - 2022</span><br>govt senior secondary school,kamol gogunda udaipur</li>
+                            <li><span>nov 2022 - present</span><br>B.Tech in computer science and engineering ,IET MLSU
+                                udaipur </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ services---------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code Service-icon"></i>
+                    <h2>Frontend development</h2>
+                    <p>developing interactive and responsive websites</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple Service-icon"></i>
+                    <h2>UI/UX design</h2>
+                    <p>designing interactive and beautiful web pages to insure better user experience </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple Service-icon"></i>
+                    <h2>UI/UX design</h2>
+                    <p>designing interactive and beautiful web pages to insure better user experience </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg" alt="worksnapshot">
+                    <div class="layer">
+                        <h3>Stock Trading website</h3>
+                        <p>you can trade the stocks of an listed company on this plateform </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" alt="worksnapshot">
+                    <div class="layer">
+                        <h3>Hotel booking website</h3>
+                        <p>you can book the hotel rooms on this plateform </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" alt="worksnapshot">
+                    <div class="layer">
+                        <h3>Hotel booking  website</h3>
+                        <p>you can book the hotel rooms on this plateform  </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-------------  contact  ------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane contact-icon"></i> govindprajapat9794@gmail.com</p>
+                    <p><i class="fa-solid fa-phone contact-icon"></i> 8619271601</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/govindprajapat_01/?igsh=OGoyMXZoMGN5NWln&utm_source=ig_contact_invite#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/govind-prajapat-61597b257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bn64i3M1mQyyY%2BVH7izAlRQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Govind. Made with <i class="fa-solid fa-heart heart"></i> by self-learning</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js" async defer>
+    </script>
+</body>
+
+</html>
